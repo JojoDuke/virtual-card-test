@@ -8,19 +8,17 @@ const createVcard = async () => {
     try {
         const payload = {
             "currency": "NGN",
-            "amount": 200,
-            "billing_name": "Jermaine Graham",
+            "amount": 10,
+            "billing_name": "Tylo Rylo",
             "billing_address": "2014 Forest Hills Drive",
             "billing_city": "San Francisco",
             "billing_state": "CA",
             "billing_postal_code": "000009",
-            "billing_country": "NG",
+            "billing_country": "US",
             "callback_url": "https://your-callback-url.com/"
         }
-        const response = await flw;
-
-        const card = response.VirtualCard.create(payload);
-        console.log(JSON.stringify(card));
+        const response = await flw.VirtualCard.create(payload);
+        console.log(response);
         
     } 
     catch (error) {
