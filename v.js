@@ -8,7 +8,7 @@ const createVcard = async () => {
     try {
         const payload = {
             "currency": "NGN",
-            "amount": 10,
+            "amount": 550,
             "billing_name": "Tylo Rylo",
             "billing_address": "2014 Forest Hills Drive",
             "billing_city": "San Francisco",
