@@ -19,7 +19,7 @@ const Gh_mobilemoney =  async () =>{
        const response =  await flw.MobileMoney.ghana(payload)
        console.log(response);
     } catch (error) {
-        console.log(error)
+        console.log(erro)
     }                            
    
 }
